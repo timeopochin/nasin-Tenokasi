@@ -40,6 +40,9 @@ function draw() {
 
 function mouseClicked() {
 
+    // Open softkeyboard on mobile
+    document.getElementById('input').focus();
+
     // Toggle keys
     for (let i = 0; i < keyCount; i++) {
         if (keys[i].hover()) {
